@@ -6,9 +6,19 @@ export const connection = () => {
       dbName: "MERN_COMPLETE_AUTHENTICATION",
     })
     .then(() => {
-      console.log("Connected to Database");
+      console.log(`
+    DATABASE CONNECTION: SUCCESS ✅
+    ------------------------------------------
+    DB NAME:  MERN_COMPLETE_AUTHENTICATION
+    STATUS:    Connected
+    `);
     })
     .catch((err) => {
-      console.log(`Some error occured while connecting to db : ${err}`);
+      console.log(`
+        DATABASE CONNECTION: FAILED ❌
+    ------------------------------------------
+    ERROR:     ${err}
+    SUGGESTION: Check your Mongo URI or network.
+    `);
     });
 };
