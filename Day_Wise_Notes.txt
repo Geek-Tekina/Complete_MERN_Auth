@@ -1,0 +1,5 @@
+Day 1 
+-> Installed packages : cors, bcrypt, dotenv, cookie-parser, mongoose, express to get started with the setup.
+-> using Twilio package to have call-authentication method using AI agent
+-> using nodemailer to have email-authentication and forgot password module
+-> Created basic setup and coded database connection module with Mongo Atlas
