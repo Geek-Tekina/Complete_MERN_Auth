@@ -6,3 +6,17 @@ Day 1
 
 Day 2
 -> Created Error middleware, in which a class is created which is extending Error Class of javascript. Used it at the last of app.js file.
+-> Created User Schema.
+
+Day 3
+-> Created hashing_fnc - bcrypt using "pre" method on User schema, compare_password.
+-> Imp middleware - catchAsyncErros.js middleware, used for catching erros in case of async await functions!
+    ``` 
+    export const catchAsyncError = (theFunction) => {
+        return (req, res, next) => {
+        Promise.resolve(theFunction(req, res, next)).catch(next);
+        };
+    };    ```
+->  Created UserController. This time when regestering user, we are also checking if the user has tried more then 3 times in last 1 hour to register himself but has not verified the account. It will also use cron jon in coming code.
+Function - registrationAttemptsByUser()
+-> 
