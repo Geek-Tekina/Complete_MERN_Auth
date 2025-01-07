@@ -3,3 +3,6 @@ Day 1
 -> using Twilio package to have call-authentication method using AI agent
 -> using nodemailer to have email-authentication and forgot password module
 -> Created basic setup and coded database connection module with Mongo Atlas
+
+Day 2
+-> Created Error middleware, in which a class is created which is extending Error Class of javascript. Used it at the last of app.js file.
